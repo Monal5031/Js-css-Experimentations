@@ -1,7 +1,7 @@
 # js semantics
 [Javascript]
 files = **/*.js
-bears = HappinessLintBear
+bears = ESLintBear
 
 # cs semantics
 [CSS]
