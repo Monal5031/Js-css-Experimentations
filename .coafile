@@ -1,0 +1,14 @@
+# js semantics
+[Javascript]
+files = **/*.js
+bears = HappinessLintBear
+
+# cs semantics
+[CSS]
+files = **/*.css
+bears = CSSLintBear
+
+# html semantics
+[HTML]
+files = **/*.html
+bears = HTMLLintBear
