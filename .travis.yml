@@ -4,6 +4,11 @@ python:
   - "3.4"
 
 install:
+  - sudo apt-get update
+  - curl -sL https://deb.nodesource.com/setup_7.x | sudo -E bash -
+  - sudo apt-get install -y nodejs
+  - sudo npm install -g csslint
+  - sudo npm install -g eslint
   - pip install coala-bears
   - cd $TRAVIS_BUILD_DIR
 
