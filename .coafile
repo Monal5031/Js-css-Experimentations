@@ -1,14 +1,14 @@
 # js semantics
 [Javascript]
-files = **/*.js
+files = js/main.js
 bears = ESLintBear
 
 # cs semantics
 [CSS]
-files = **/*.css
+files = css/style.css
 bears = CSSLintBear
 
 # html semantics
 [HTML]
-files = **/*.html
+files = index.html
 bears = HTMLLintBear
