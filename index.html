@@ -6,7 +6,10 @@
 </head>
   <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
   <script src="js/main.js"> </script>
+  <script src="dependencies/jscolor.js"></script>
 <body>
+
+<!-- Show/Hide properties here -->
 
   <h1>Proficient in:</h1>
   <div class="skillset">
@@ -42,6 +45,51 @@
       </p>
     </div>
   </div>
+
+<!--  Color Palette here  -->
+<!-- Begin palette -->
+<div class="strip content">
+  <div id="palette">
+    <div id="preview">
+      This is how it looks<br />
+      please choose nice colors.<br />
+      <big>made with &hearts; by Monal Shadi</big>
+    </div>
+    <div class="panel bgcolor">
+        <button id="bgcolor-button" class="jscolor-active">Choose background</button>
+        <table>
+          <tr><th>RGB</th><td><input id="bgcolor-rgb" onchange="setString('bgcolor', this.value)" /></td></tr>
+          <tr><th>HEX</th><td><input id="bgcolor-hex" onchange="setString('bgcolor', this.value)" /></td></tr>
+
+          <tr><th>H</th><td><input id="bgcolor-hue" class="short" onchange="setHSV('bgcolor', this.value, null, null)" /> &deg;</td></tr>
+          <tr><th>S</th><td><input id="bgcolor-sat" class="short" onchange="setHSV('bgcolor', null, this.value, null)" /> %</td></tr>
+          <tr><th>V</th><td><input id="bgcolor-val" class="short" onchange="setHSV('bgcolor', null, null, this.value)" /> %</td></tr>
+
+          <tr class="red"><th>R</th><td><input id="bgcolor-red" class="short" onchange="setRGB('bgcolor', this.value, null, null)" /></td></tr>
+          <tr class="grn"><th>G</th><td><input id="bgcolor-grn" class="short" onchange="setRGB('bgcolor', null, this.value, null)" /></td></tr>
+          <tr class="blu"><th>B</th><td><input id="bgcolor-blu" class="short" onchange="setRGB('bgcolor', null, null, this.value)" /></td></tr>
+        </table>
+      </div>
+    <div class="panel fgcolor">
+      <button id="fgcolor-button" class="jscolor-active">Choose foreground</button>
+        <table>
+          <tr><td><input id="fgcolor-rgb" onchange="setString('fgcolor', this.value)" /></td><th>RGB</th></tr>
+          <tr><td><input id="fgcolor-hex" onchange="setString('fgcolor', this.value)" /></td><th>HEX</th></tr>
+
+          <tr><td>&deg; <input id="fgcolor-hue" class="short" onchange="setHSV('fgcolor', this.value, null, null)" /></td><th>H</th></tr>
+          <tr><td>% <input id="fgcolor-sat" class="short" onchange="setHSV('fgcolor', null, this.value, null)" /></td><th>S</th></tr>
+          <tr><td>% <input id="fgcolor-val" class="short" onchange="setHSV('fgcolor', null, null, this.value)" /></td><th>V</th></tr>
+
+          <tr class="red"><td><input id="fgcolor-red" class="short" onchange="setRGB('fgcolor', this.value, null, null)" /></td><th>R</th></tr>
+          <tr class="grn"><td><input id="fgcolor-grn" class="short" onchange="setRGB('fgcolor', null, this.value, null)" /></td><th>G</th></tr>
+          <tr class="blu"><td><input id="fgcolor-blu" class="short" onchange="setRGB('fgcolor', null, null, this.value)" /></td><th>B</th></tr>
+        </table>
+    </div>
+    <script type="text/javascript" src="js/palette.js"></script>
+  </div>
+</div>
+<!-- End palette -->
+
 
 </body>
 
