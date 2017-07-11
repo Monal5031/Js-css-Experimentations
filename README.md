@@ -1,3 +1,3 @@
-### Hello-JS
+### Js-css-Experimentations
 <hr>
-A basic website built to learn js.
+My list of experimentations made in Js and css.
