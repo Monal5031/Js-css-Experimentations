@@ -26,9 +26,14 @@ h1 {
   background-color: #0C73B8;
 }
 
+.music-block{
+  background-color: #b3b3b3;
+}
+
 .skill-html,
 .skill-js,
-.skill-jquery {
+.skill-jquery,
+.music-block {
   width: 100%;
   padding: 1em 3em 2em 2em;
   margin: 0.5em 0;
@@ -67,7 +72,24 @@ ul {
   padding:8px 0 0 8px;
 }
 
-
+a.music-link{
+  font-size: 14px;
+}
+.music-track{
+  display: inline-block;
+  width: 25%;
+  float: left;
+  height: 200px;
+  text-align: center;
+}
+.music-track img{
+  max-width: 100%;
+}
+.clearfix{
+  display: block;
+  width: 100%;
+  clear: both;
+}
 
 /***************************
 ****************************
